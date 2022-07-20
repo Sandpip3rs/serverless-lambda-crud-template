@@ -1,0 +1,11 @@
+openapi: 3.0.0
+info:
+  title: 'Account Service'
+  description: "Allow clients to create new account"
+  version: 1.0.0
+
+paths:
+  /account:
+    $ref: './functions/create.yml#/paths'
+  /account/{company-name}:
+    $ref: './functions/delete.yml#/paths'

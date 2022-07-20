@@ -1,0 +1,17 @@
+paths:
+  post:
+    summary: 'create'
+    description: 'Create new account'
+    responses:
+      201:
+        description: 'Successfully request'
+      400:
+        description: 'Client provided invalid data'
+      401:
+        description: 'Client provided either nonexistent or wrong credentials'
+      405:
+        description: 'Method Not Allowed'
+      415:
+        description: 'Unsupported Media Type'
+      500:
+        description: 'Internal Server Error'
